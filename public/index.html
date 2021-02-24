@@ -1,0 +1,18 @@
+<!doctype HTML>
+<html>
+  <head>
+    <meta charste="utf-8">
+    <title>Giving pixi a try!</title>
+  </head>
+  <script src="pixi/pixi.min.js"></script>
+  <body>
+    <script type="text/javascript">
+      let type = "WevGL"
+      if(!PIXI.utils.isWebGLSupported()){
+        type = "canvas"
+      }
+
+      PIXI.utils.sayHello(type)
+    </script>
+  </body>
+</html>
